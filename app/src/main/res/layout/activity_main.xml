@@ -4,41 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@color/purple_200"
     android:gravity="center"
     android:orientation="vertical"
-    >
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_main_first"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="enter a num"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+
+            />
+
+        <EditText
+            android:id="@+id/et_main_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="enter a num"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_main_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="sum the nums" />
 
     <TextView
+
+        android:id="@+id/tv_main_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
+        android:text="RESULT: "
+        android:textColor="@color/black" />
 
 
 </LinearLayout>
